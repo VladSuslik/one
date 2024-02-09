@@ -1,0 +1,35 @@
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+banana
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+kiwi
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+grape - 98,43,43,82,47,52,42,28,35,37,93,84,57,13,27,39,33,72,35,19,50,37,74,69,84,44,55,68,66,88,83,87,32,11,85,33,2,42,48,46,48,72,23,26,1,97,56,95,26,80,19,56,55,87,74,41
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+grape
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+true + banana
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+ * 14
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+true - orange
+const findLargestNumber = numbers => Math.max(...numbers);
+95 + 53
+
+const getRandomElement = array => array[getRandomIndex(array)];
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+75,3,23,58,29,46 / 92
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
